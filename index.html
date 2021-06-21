@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2171782dfc.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <title>To-do List</title>
+</head>
+
+<body>
+    <header class="todo-header">
+        <h1 class="time todo-heading"></h1>
+        <h1 class="todo-heading">Anubhav's Todo List</h1>
+        <h1 class="date todo-heading"></h1>
+    </header>
+    <form>
+        <input type="text" class="todo-input" placeholder="Create your todo">
+        <button class="todo-button"><i class="fas fa-plus-circle" type="submit"></i></button>
+        <div class="select">
+            <select name="todos" id="" class="filter-todo">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">Uncompleted</option>
+            </select>
+        </div>
+    </form>
+    <div class="todo-box">
+        <ul class="todo-list"></ul>
+    </div>
+</body>
+<script src="/app.js"></script>
+
+</html>
