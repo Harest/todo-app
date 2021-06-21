@@ -20,7 +20,7 @@
 
 ## Screenshot
 
-![App Screenshot](my-project/todo-app-screenshot.jpg)
+![App Screenshot](/todo-app-screenshot.jpg)
 
 ## Lessons Learned
 
