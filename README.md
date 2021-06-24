@@ -44,10 +44,10 @@
 
 ## Optimizations ⌨️
 
-**1. Refactors:**
+**1. Refactors:**  
 Arranged and grouped all the _selectors_, _functions_ and _event listeners_ together.
 
-**2. Performance improvement:** 📈
+**2. Performance improvement:** 📈  
 Created _functions_ for the _repetitive code_.
 
 ## Run Locally 🧑‍💻
