@@ -1,6 +1,8 @@
-# Todo App
+# Todo App ☑️
 
-## Project Description
+![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)
+
+## Project Description 📑
 
 - This is simple to-do checklist app for our daily needs.
 - We can add our daily goals here.
@@ -8,29 +10,47 @@
 - We can delete the tasks, if we don't need them anymore.
 - Tasks will remain stored here until we delete them.
 
-## License
+## License ✅
 
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
+[MIT](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 
-## Tech Stack
+## Tech Stack 💻
 
 - **Vanilla Javascript**
 - **HTML5**
 - **CSS3**
 
-## Screenshot
+## Screenshot 📸
 
 ![App Screenshot](images/todo-app-screenshot.jpg)
 
-## Lessons Learned
+## Lessons Learned 🖥️
 
-What did you learn while building this project? What challenges did you face and how did you overcome them?
+- **`DOM` Manipulation**
+  - **`document object`** to manipulate the _HTML elements_
+  - **`querySelector() method`** to select the _HTML elements_
+  - **`addEventListener() method`** to listen the _button-clicks_
+  - **`createElement() method`** to create _new todo tasks_
+  - **`appendChild() method`** to add _new tasks_ to the `DOM`
+  - **`remove() method`** to remove the _HTML elements_
+  - **`innerHTML property`** to manipulate the _HTML code_
+  - **`innerText property`** to change the _text_
+- **`localStorage` API**
+  - **`setItem() method`** to save _tasks'_ data to **`localStorage`**
+  - **`getItem() method`** to retrieve _tasks'_ data from **`localStorage`** on the launch
+- **`Date` object**
+  - **`toLocaleDateString() method`** to show the local date
+  - **`toLocaleTimeString() method`** to show the local time
 
-## Optimizations
+## Optimizations ⌨️
 
-What optimizations did you make in your code? E.g. refactors, performance improvements, accessibility
+**1. Refactors:**
+Arranged and grouped all the _selectors_, _functions_ and _event listeners_ together.
 
-## Run Locally
+**2. Performance improvement:** 📈
+Created _functions_ for the _repetitive code_.
+
+## Run Locally 🧑‍💻
 
 Clone the project
 
@@ -56,7 +76,7 @@ Start the server
   live-server
 ```
 
-## Contributing
+## Contributing 🤝
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are greatly appreciated.
 
@@ -66,15 +86,15 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## Support
+## Support 📧
 
 For support, email anubhavdxt46@gmail.com.
 
-## Acknowledgements
+## Acknowledgements 🙏
 
-- [Dev Ed YouTube](https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q)
+- [Udemy](https://www.udemy.com)
 - [README.SO](https://readme.so)
 
-## Authors
+## Authors 👨‍💻
 
 - [@Anubhavdxt](https://www.github.com/Anubhavdxt)
