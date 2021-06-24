@@ -92,7 +92,7 @@ For support, email anubhavdxt46@gmail.com.
 
 ## Acknowledgements 🙏
 
-- [Udemy](https://www.udemy.com)
+- [Dev Ed YouTube](https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q)
 - [README.SO](https://readme.so)
 
 ## Authors 👨‍💻
