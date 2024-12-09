@@ -7,7 +7,7 @@
 body {
   background: linear-gradient(to right, #0099f7, #f11712);
   color: #fff;
-  font-family: "Poppins", sans-serif;
+  font-family: Arial, sans-serif;
   min-height: 100vh;
 }
 
@@ -64,7 +64,7 @@ select {
   border: 0 !important;
   background-image: none;
   color: #0099f7;
-  font-family: "Poppins", sans-serif;
+  font-family: Arial, sans-serif;
   cursor: pointer;
   width: 13rem;
 }
@@ -187,8 +187,8 @@ form input {
 }
 
 .date,
-.time {
-  font-family: "Nova Square", cursive;
+.navigate {
+  font-family: Arial, sans-serif;
   font-size: 2rem;
   font-weight: 600;
 }
