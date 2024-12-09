@@ -2,6 +2,12 @@
 
 ![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)
 
+## Fork Details
+_I did some minimal changes, just so that the state of the tasks is stored. `Eventual TODO` means stuff i may do at a later point._
+- Store the completed daily tasks (TODO: Add a way to clean up the stored states data)
+- Navigate between days (Eventual TODO: Add a calendar to choose easily)
+- Eventual TODO: Add tasks that are specific to a date, a day of the week, etc.
+
 ## Project Description 📑
 
 - This is simple to-do checklist app for our daily needs.
