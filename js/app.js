@@ -16,11 +16,12 @@ date.addEventListener("click", currentTodo);
 prev.addEventListener("click", prevTodo);
 next.addEventListener("click", nextTodo);
 
-// Useful variables
+// Useful variables & const
 var completedToday = []; // Completed today tasks
 var currentDay = new Date(); // Current displayed day
-const cDay = new Date(); // Current day
+var cDay = new Date(); // Current day
 const docTitle = document.title;
+const msDay = 24 * 60 * 60 * 1000;
 
 //Functions
 function addTodo(e) {
@@ -72,7 +73,7 @@ function delCheck(e) {
 			});
 		}
 	}
-	if (item.classList[0] === "check-todo") {
+	if (item.classList[0] === "check-todo" || item.classList[0] === "todo-item") {
 		const todo = item.parentElement;
 		todo.classList.toggle("completed");
 		storeTodoState(todo);
@@ -168,24 +169,22 @@ function getTodos() {
 // Get current Datetime
 function Datetime(date = null) {
 	const currentDate = (date === null) ? currentDay : new Date(date);
-	const Datetime = "" + currentDate.getFullYear() + currentDate.getMonth() + currentDate.getDate();
+	const Datetime = "" + currentDate.getFullYear() + "-" + (currentDate.getMonth() + 1) + "-" + currentDate.getDate();
 	return Datetime;
 }
 
 // Get previous day Date and refresh list
 function prevTodo() {
-	const dateOffset = 24 * 60 * 60 * 1000;
 	const prevDate = currentDay;
-	prevDate.setTime(prevDate.getTime() - dateOffset);
+	prevDate.setTime(prevDate.getTime() - msDay);
 	console.log("Request ", prevDate.getDate(), prevDate.getMonth() + 1, prevDate.getFullYear());
 	refreshTodo(prevDate);
 }
 
 // Get next day Date and refresh list
 function nextTodo() {
-	const dateOffset = 24 * 60 * 60 * 1000;
 	const nextDate = currentDay;
-	nextDate.setTime(nextDate.getTime() + dateOffset);
+	nextDate.setTime(nextDate.getTime() + msDay);
 	console.log("Request ", nextDate.getDate(), nextDate.getMonth() + 1, nextDate.getFullYear());
 	refreshTodo(nextDate);
 }
@@ -193,6 +192,7 @@ function nextTodo() {
 // Get current day and refresh list
 function currentTodo() {
 	currentDay = new Date();
+	cDay = new Date();
 	refreshTodo();
 }
 
@@ -204,7 +204,7 @@ function refreshTodo(customDate = null) {
 	const tasks = document.getElementsByClassName("todo");
 	for(var i = 0; i < tasks.length; i++) {
 		(completedToday.indexOf(tasks[i].textContent) != -1) ? tasks[i].classList.add("completed") : tasks[i].classList.remove("completed");
-		if (customDate !== null && customDate.getTime() != cDay.getTime()) {
+		if (customDate !== null && Math.abs(customDate.getTime() - cDay.getTime()) > msDay) {
 			tasks[i].getElementsByClassName("del-todo")[0].style.display = "none";
 			tasks[i].getElementsByClassName("check-todo")[0].style.display = "none";
 		} else {
